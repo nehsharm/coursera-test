@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  align-items: center;
+}
+.divheader{
+	border: 2px black solid;
+	width: 30%;
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+    background-color: lightgray;
+}
+h1{
+	text-align: center;
+  font-family: cursive;
+}
+#halloween{
+	color: white;
+	background-color: black;
+}
+#christmas{
+	color: white;
+	background-color: red;
+}
+#newyear{
+	color: white;
+	background-color: green;
+}
+
+.rightfloat{
+	position: relative;
+	float: right;
+	text-align: center;
+	padding:  5px;
+	border: 1px black solid;
+ 	font-family: cursive;
+ 	font-size: 1em;
+}
+.clearboth{
+	    clear: both;
+	padding:  10px;
+}
+
+@media (min-width: 992px) {
+  
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .tablet{
+  	width: 98%;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .divheader{
+  	clear: both;
+  }
+   .mobile{
+  	width: 98%;
+    margin-bottom: 10px;
+   }
+}
