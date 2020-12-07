@@ -19,7 +19,8 @@ div > div {
     width: 100%;
 }
 p{
-    padding-top: 18px;
+	clear:both;
+    margin: 10px;
 }
 .fordiv{
     float: right;
@@ -60,7 +61,7 @@ p{
         border: 2px solid black;
     }
     .col-md-6{
-        width: 46.67%;
+        width: 47.67%;
     }
     .col-md-12{
         width: 96.67%;
