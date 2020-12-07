@@ -1,67 +1,80 @@
-* {
-  box-sizing: border-box;
-  align-items: center;
+*{
+    box-sizing: border-box;
+    font-family: cursive;
 }
-.divheader{
-	border: 2px black solid;
-	width: 30%;
-	float: left;
-	margin-left: 10px;
-	margin-right: 10px;
+h1 {
+    text-align: center;
+}
+div > div {
+    border: 2px solid black;
     background-color: lightgray;
+    width: 90%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    color: black;
+    margin: 5px;
 }
-h1{
-	text-align: center;
-  font-family: cursive;
+.row{
+    width: 100%;
 }
-#halloween{
-	color: white;
-	background-color: black;
+p{
+    padding-top: 18px;
 }
-#christmas{
-	color: white;
-	background-color: red;
+.fordiv{
+    float: right;
+    display: inline;
+    width: 33%;
+    margin-top: 0;
+    margin-right: 0;
+    border: 1px solid black;
+    height: auto;
+    text-align: center;
+    color: white;
 }
-#newyear{
-	color: white;
-	background-color: green;
+.halloween {
+    background-color: black;
 }
-
-.rightfloat{
-	position: relative;
-	float: right;
-	text-align: center;
-	padding:  5px;
-	border: 1px black solid;
- 	font-family: cursive;
- 	font-size: 1em;
+.christmas {
+    background-color: red;
 }
-.clearboth{
-	    clear: both;
-	padding:  10px;
-}
-
-@media (min-width: 992px) {
-  
+.newyear {
+    background-color: green ;
 }
 
 
-@media (min-width: 768px) and (max-width: 991px) {
-  .divheader{
-  	width: 47%;
-  }
-  .tablet{
-  	width: 98%;
-    margin-top: 10px;
-  }
+@media (min-width: 992px)
+{
+    .col-lg-4 {
+		float: left;
+		border: 2px solid black;
+        width: 30%;
+    }
 }
 
-@media (max-width: 767px) {
-  .divheader{
-  	clear: both;
-  }
-   .mobile{
-  	width: 98%;
-    margin-bottom: 10px;
-   }
+@media  (min-width: 768px) and (max-width: 991px)
+{
+    .col-md-6, .col-md-12
+    {
+        float: left;
+        border: 2px solid black;
+    }
+    .col-md-6{
+        width: 46.67%;
+    }
+    .col-md-12{
+        width: 96.67%;
+    }
+    
+    .newyear {
+        width: 16.67%;
+    }
+}
+
+@media  (max-width: 767px)
+{
+    div > div {
+    margin-top: 3vh;
+    width: auto;
+    }
 }
