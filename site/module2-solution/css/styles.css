@@ -47,6 +47,9 @@ h1{
 
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .divheader{
+  	width: 47%;
+  }
   .tablet{
   	width: 98%;
     margin-top: 10px;
